@@ -1,0 +1,90 @@
+main {
+  background-color: $veryPaleOrange;
+  border-radius: 20px;
+  color: $darkBrown;
+  max-height: 660px;
+  padding: 42px;
+
+  h1 {
+    font-weight: 700;
+    margin-bottom: 42px;
+  }
+
+  p {
+    color: $mediumBrown;
+    font-size: 14px;
+  }
+
+  .chart {
+    align-items: baseline;
+    border-bottom: 2px solid $cream;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+
+    li {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      width: 50px;
+
+      .graph {
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 12px;
+        transition: all 125ms ease-in-out;
+        width: 100%;
+
+        &:hover {
+          filter: brightness(1.2);
+        }
+
+        &.under50 {
+          background-color: $softRed;
+        }
+
+        &.over50 {
+          background-color: $cyan;
+        }
+      }
+
+      p {
+        font-size: 12px;
+        color: $mediumBrown;
+      }
+
+      .tooltip {
+        background-color: $darkBrown;
+        border-radius: 4px;
+        color: $cream;
+        padding: 8px;
+        position: absolute;
+        top: -42px;
+      }
+    }
+  }
+
+  .totals-title {
+    margin-top: 32px;
+  }
+
+  .totals {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &-amount {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    &-info {
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
