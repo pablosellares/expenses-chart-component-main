@@ -63,16 +63,16 @@ main {
         font-size: 12px;
         color: $mediumBrown;
       }
-
-      .tooltip {
-        background-color: $darkBrown;
-        border-radius: 4px;
-        color: $cream;
-        padding: 8px;
-        position: absolute;
-        top: -42px;
-      }
     }
+  }
+
+  .tooltip {
+    background-color: $darkBrown;
+    border-radius: 4px;
+    color: $cream;
+    padding: 8px;
+    position: absolute;
+    top: -42px;
   }
 
   .totals-title {
