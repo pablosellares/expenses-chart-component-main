@@ -5,6 +5,10 @@ main {
   max-height: 660px;
   padding: 42px;
 
+  @include tablet {
+    padding: 16px;
+  }
+
   h1 {
     font-weight: 700;
     margin-bottom: 42px;
@@ -37,6 +41,10 @@ main {
         margin-bottom: 12px;
         transition: all 125ms ease-in-out;
         width: 100%;
+
+        @include tablet {
+          width: 75%;
+        }
 
         &:hover {
           filter: brightness(1.2);
